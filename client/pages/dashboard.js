@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import styled from "styled-components";
-// import Main from "../components/Main";
+import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
 import { ThirdwebSDK } from "@3rdweb/sdk";
 import { ethers } from "ethers";
@@ -40,11 +40,11 @@ function Dashboard({ address }) {
           sanityTokens={sanityTokens}
           thirdWebTokens={thirdWebTokens}
         />
-        {/* <Main
+        <Main
           walletAddress={address}
           sanityTokens={sanityTokens}
           thirdWebTokens={thirdWebTokens}
-        /> */}
+        />
       </MainContainer>
     </Wrapper>
   );
