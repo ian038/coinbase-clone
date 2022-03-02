@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import styled from "styled-components";
 // import Main from "../components/Main";
-// import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/Sidebar";
 import { ThirdwebSDK } from "@3rdweb/sdk";
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";
@@ -33,7 +33,7 @@ function Dashboard({ address }) {
 
   return (
     <Wrapper>
-      {/* <Sidebar /> */}
+      <Sidebar />
       <MainContainer>
         <Header
           walletAddress={address}
