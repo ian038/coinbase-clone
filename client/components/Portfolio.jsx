@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { coins } from "../static/coins";
-// import Coin from "./Coin";
+import Coin from "./Coin";
 import BalanceChart from "./BalanceChart";
 
 function Portfolio({ thirdWebTokens, sanityTokens, walletAddress }) {
@@ -63,14 +63,14 @@ function Portfolio({ thirdWebTokens, sanityTokens, walletAddress }) {
               </TableRow>
             </TableItem>
             <Divider />
-            {/* <div>
+            <div>
               {coins.map((coin, index) => (
                 <div key={index}>
                   <Coin coin={coin} />
                   <Divider />
                 </div>
               ))}
-            </div> */}
+            </div>
           </Table>
         </PortfolioTable>
       </Content>
